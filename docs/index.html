@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>YouTube Downloader MP3 &amp; MP4 – AUDIOFLOW</title>
+<meta name="description" content="Windows app to save music and videos you own or are authorised to download – MP3 with cover art and MP4.">
+<style>
+:root{--bg:#080713;--bg2:#111025;--panel:#17142b;--p:#7c2cff;--n:#a855ff;--v:#c084fc;--t:#fff;--t2:#aaa5c5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.6 "Segoe UI",system-ui,sans-serif;color:var(--t);background:radial-gradient(1200px 600px at 20% -10%,#1f1252,transparent),var(--bg)}
+a{color:var(--v)}header,section,footer{max-width:1000px;margin:auto;padding:28px 20px}
+nav{display:flex;justify-content:flex-end;gap:6px}
+nav button{background:#ffffff14;border:1px solid #a855ff55;color:var(--t);border-radius:8px;padding:6px 12px;cursor:pointer}
+nav button.on{background:var(--p);border-color:var(--v)}
+.hero{text-align:center;padding-top:24px}
+.logo{width:120px;height:120px;filter:drop-shadow(0 0 28px #a855ff99)}
+h1{font-size:clamp(30px,6vw,52px);margin:14px 0 4px;line-height:1.1}
+h1 span{color:var(--n)}.sub{color:var(--t2);font-size:19px;margin:0 0 24px}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--n),var(--p));border:1px solid var(--v);border-radius:12px;padding:14px 30px;font-size:19px;font-weight:600;color:#fff;text-decoration:none;box-shadow:0 0 30px #7c2cff88}
+.btn:hover{filter:brightness(1.15)}.small{color:var(--t2);font-size:14px;margin-top:10px}
+.shot{max-width:100%;border-radius:16px;border:1px solid #a855ff66;margin-top:28px;box-shadow:0 0 50px #7c2cff55}
+h2{font-size:28px;margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid #7c2cff55;border-radius:14px;padding:16px}
+.card b{display:block;color:var(--v);margin-bottom:4px}.card p{margin:0;color:var(--t2);font-size:15px}
+ol{padding-left:20px;color:var(--t2)}ol b{color:var(--t)}
+.note{background:var(--bg2);border:1px solid #a855ff44;border-radius:12px;padding:14px 16px;color:var(--t2);font-size:15px}
+footer{text-align:center;color:var(--t2);font-size:14px}
+</style></head><body>
+<header><nav><button data-l="en" class="on">EN</button><button data-l="sq">SQ</button><button data-l="de">DE</button></nav></header>
+<main>
+<section class="hero">
+<svg class="logo" viewBox="0 0 100 100" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c084fc"/><stop offset="1" stop-color="#7c2cff"/></linearGradient></defs><rect x="2" y="2" width="96" height="96" rx="22" fill="#12092f" stroke="url(#g)" stroke-width="3"/><rect x="16" y="20" width="44" height="31" rx="8" fill="#e5252f"/><path d="M33 29v14l13-7z" fill="#fff"/><ellipse cx="58" cy="57" rx="9" ry="6.5" fill="#d8b4fe"/><rect x="64" y="20" width="3.5" height="38" fill="#d8b4fe"/><path d="M67 20c12 4 17 12 13 24l-4-4c1-7-3-11-9-12z" fill="#d8b4fe"/><path d="M72 62v14M65 72l7 11 7-11z" stroke="#f1e8ff" stroke-width="6" fill="#f1e8ff" stroke-linejoin="round"/></svg>
+<h1>YouTube Downloader <span>MP3 &amp; MP4</span></h1>
+<p class="sub" data-i="tag"></p>
+<a class="btn" href="https://github.com/PatrikRadogoshi/YouTube-Downloader-MP3-MP4/releases/latest" data-i="dl"></a>
+<p class="small" data-i="req"></p>
+<img class="shot" src="screenshot.png" alt="" onerror="this.style.display='none'">
+</section>
+<section><h2 data-i="fh"></h2><div class="grid">
+<div class="card"><b data-i="f1t"></b><p data-i="f1"></p></div><div class="card"><b data-i="f2t"></b><p data-i="f2"></p></div>
+<div class="card"><b data-i="f3t"></b><p data-i="f3"></p></div><div class="card"><b data-i="f4t"></b><p data-i="f4"></p></div>
+<div class="card"><b data-i="f5t"></b><p data-i="f5"></p></div><div class="card"><b data-i="f6t"></b><p data-i="f6"></p></div>
+</div></section>
+<section><h2 data-i="hh"></h2><ol><li data-i="s1"></li><li data-i="s2"></li><li data-i="s3"></li></ol>
+<p class="note" data-i="smart"></p></section>
+<section><div class="note" data-i="legal"></div></section>
+</main>
+<footer><span data-i="by"></span><br><a href="https://github.com/PatrikRadogoshi/YouTube-Downloader-MP3-MP4">GitHub</a></footer>
+<script>
+const T={
+en:{tag:"Save music and videos you own or are authorised to download – with a modern purple desktop app.",dl:"⬇ Download for Windows",req:"Windows 11 · English, Shqip, Deutsch",fh:"Features",
+f1t:"MP3 with cover art",f1:"128–320 kbps with title, artist and artwork.",f2t:"MP4 up to 4K",f2:"Only the resolutions the video really has.",
+f3t:"Smart playlists",f3:"Download all, one video, or pick single tracks.",f4t:"Auto-detects links",f4:"Copy a YouTube link – even from the tray.",
+f5t:"Search, queue, player",f5:"Built-in search, separate MP3/MP4 lists and a built-in player.",f6t:"7 themes · 3 languages",f6:"Purple, blue shades and an Albania theme. Auto-updates.",
+hh:"How it works",s1:"Download and run the installer.",s2:"Copy a YouTube link or type a song name.",s3:"Choose MP3 or MP4 – done.",
+smart:"Windows may show “Windows protected your PC” because the installer is new and not yet code-signed. Click More info → Run anyway. Check the SHA256 file on the Release page if you want to verify it.",
+legal:"Use only for content you own or are authorised to download. The app does not bypass DRM or access controls. You are responsible for following YouTube’s Terms and copyright law. Provided “as is”, without warranty.",
+by:"Created By: Patrik Radogoshi - Kosovë / Gjakovë - November 2026 · Powered By: Patrik Radogoshi"},
+sq:{tag:"Ruaj muzikën dhe videot e tua (ose me leje) me një aplikacion modern vjollcë për kompjuter.",dl:"⬇ Shkarko për Windows",req:"Windows 11 · English, Shqip, Deutsch",fh:"Çfarë ofron",
+f1t:"MP3 me kopertinë",f1:"128–320 kbps me titull, artist dhe kopertinë.",f2t:"MP4 deri në 4K",f2:"Vetëm rezolucionet që i ka vërtet videoja.",
+f3t:"Lista të zgjuara",f3:"Shkarko të gjitha, një video, ose zgjidh këngë një nga një.",f4t:"Zbulon linkun vetë",f4:"Kopjo linkun e YouTube – edhe kur është në tray.",
+f5t:"Kërkim, radhë, luajtës",f5:"Kërkim i integruar, lista të ndara MP3/MP4 dhe luajtës i brendshëm.",f6t:"7 tema · 3 gjuhë",f6:"Vjollcë, blu dhe tema Albania. Përditësim automatik.",
+hh:"Si funksionon",s1:"Shkarko dhe ekzekuto installer-in.",s2:"Kopjo një link YouTube ose shkruaj emrin e këngës.",s3:"Zgjidh MP3 ose MP4 – gati.",
+smart:"Windows mund të shfaqë “Windows protected your PC” sepse installer-i është i ri dhe ende i panënshkruar. Shtyp More info → Run anyway. Për verifikim, krahaso SHA256 te faqja e Release-it.",
+legal:"Përdore vetëm për përmbajtje që e ke ti ose që ke leje ta shkarkosh. Aplikacioni nuk anashkalon DRM-në apo kontrollet e qasjes. Je përgjegjës të respektosh kushtet e YouTube-it dhe të drejtat e autorit. Ofrohet “siç është”, pa garanci.",
+by:"Krijuar nga: Patrik Radogoshi - Kosovë / Gjakovë - Nëntor 2026 · Mundësuar nga: Patrik Radogoshi"},
+de:{tag:"Speichern Sie eigene oder erlaubte Musik und Videos – mit einer modernen Desktop-App im Lila-Design.",dl:"⬇ Für Windows herunterladen",req:"Windows 11 · English, Shqip, Deutsch",fh:"Funktionen",
+f1t:"MP3 mit Cover",f1:"128–320 kbps mit Titel, Künstler und Cover.",f2t:"MP4 bis 4K",f2:"Nur Auflösungen, die das Video wirklich hat.",
+f3t:"Smarte Playlists",f3:"Alles, ein Video oder einzelne Titel laden.",f4t:"Erkennt Links automatisch",f4:"YouTube-Link kopieren – auch aus dem Infobereich.",
+f5t:"Suche, Warteschlange, Player",f5:"Eingebaute Suche, getrennte MP3/MP4-Listen und Player.",f6t:"7 Designs · 3 Sprachen",f6:"Lila, Blautöne und ein Albanien-Design. Automatische Updates.",
+hh:"So funktioniert es",s1:"Installer herunterladen und starten.",s2:"YouTube-Link kopieren oder Songname eingeben.",s3:"MP3 oder MP4 wählen – fertig.",
+smart:"Windows zeigt eventuell „Der Computer wurde durch Windows geschützt“, weil der Installer neu und noch nicht signiert ist. Klicken Sie auf Weitere Informationen → Trotzdem ausführen. Die SHA256-Prüfsumme steht auf der Release-Seite.",
+legal:"Nur für Inhalte nutzen, die Ihnen gehören oder die Sie herunterladen dürfen. Die App umgeht weder DRM noch Zugriffsbeschränkungen. Sie sind für die Einhaltung der YouTube-Bedingungen und des Urheberrechts verantwortlich. Bereitstellung „wie besehen“, ohne Gewähr.",
+by:"Erstellt von: Patrik Radogoshi - Kosovo / Gjakova - November 2026 · Unterstützt von: Patrik Radogoshi"}};
+function setL(l){document.documentElement.lang=l;document.querySelectorAll("[data-i]").forEach(e=>e.textContent=T[l][e.dataset.i]);
+document.querySelectorAll("nav button").forEach(b=>b.classList.toggle("on",b.dataset.l===l));try{localStorage.setItem("l",l)}catch(e){}}
+document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>setL(b.dataset.l));
+let l="en";try{l=localStorage.getItem("l")||""}catch(e){}if(!T[l]){const n=(navigator.language||"en").slice(0,2);l=T[n]?n:"en"}setL(l);
+</script></body></html>
