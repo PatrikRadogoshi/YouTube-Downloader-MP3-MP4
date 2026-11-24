@@ -26,7 +26,7 @@ Download music and videos you own or are authorised to download – with a moder
 - **Automatic updates** for the app and the downloader engine.
 
 ### Install
-1. Download `YouTubeDownloader_Setup.exe` from [Releases](https://github.com/PatrikRadogoshi/YouTube-Downloader-MP3-MP4/releases/latest).
+1. Download [`YouTubeDownloader_Setup.exe`](https://github.com/PatrikRadogoshi/YouTube-Downloader-MP3-MP4/releases/latest/download/YouTubeDownloader_Setup.exe) (always the latest version; all versions are on the [Releases](https://github.com/PatrikRadogoshi/YouTube-Downloader-MP3-MP4/releases) page).
 2. Run it and choose your language and install folder.
 3. Copy a YouTube link – the rest is automatic.
 
@@ -54,7 +54,7 @@ Built with [yt-dlp](https://github.com/yt-dlp/yt-dlp) (Unlicense), [FFmpeg](http
 - **Përditësime automatike** për aplikacionin dhe motorin e shkarkimit.
 
 ### Instalimi
-1. Shkarko `YouTubeDownloader_Setup.exe` nga [Releases](https://github.com/PatrikRadogoshi/YouTube-Downloader-MP3-MP4/releases/latest).
+1. Shkarko [`YouTubeDownloader_Setup.exe`](https://github.com/PatrikRadogoshi/YouTube-Downloader-MP3-MP4/releases/latest/download/YouTubeDownloader_Setup.exe) (gjithmonë versioni i fundit; të gjitha versionet janë te [Releases](https://github.com/PatrikRadogoshi/YouTube-Downloader-MP3-MP4/releases)).
 2. Ekzekutoje, zgjidh gjuhën dhe dosjen e instalimit.
 3. Kopjo një link YouTube – pjesa tjetër është automatike.
 
